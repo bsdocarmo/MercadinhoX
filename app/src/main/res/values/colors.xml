@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D11502</color>
+    <color name="colorPrimaryDark">#9f0f00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorActionBarDivisor">#9a1800</color>
+    <color name="colorTextColor">#5a0600</color>
+    <color name="colorBorderPrice">#d0b858</color>
+    <color name="colorAddCartBg">#d60904</color>
+    <color name="colorAddCartText">#ffc046</color>
+    <color name="colorBackBg">#ffac00</color>
+    <color name="colorBackText">#6f1d00</color>
+
+</resources>

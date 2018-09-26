@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/double_padding"
+    tools:context=".ui.ProductActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ap_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/products"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/big_text_size"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/quadruple_padding"
+        android:paddingTop="@dimen/double_padding"
+        android:paddingEnd="@dimen/quadruple_padding">
+
+        <ImageView
+            android:id="@+id/ap_iv_product"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_default"
+            android:contentDescription="@string/iv_product"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/ap_tv_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="4" />
+
+        <TextView
+            android:id="@+id/ap_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/half_margin"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTextColor"
+            android:textSize="@dimen/default_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/ap_tv_description"
+            app:layout_constraintTop_toBottomOf="@id/ap_iv_product"
+            app:layout_constraintVertical_weight="1" />
+
+        <TextView
+            android:id="@+id/ap_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/half_margin"
+            android:gravity="center_vertical"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorTextColor"
+            android:textSize="@dimen/description_text_size"
+            app:layout_constraintBottom_toTopOf="@id/ap_bt_back"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_name"
+            app:layout_constraintVertical_weight="4" />
+
+        <Button
+            android:id="@+id/ap_bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_back"
+            android:text="@string/bt_back"
+            android:textColor="@color/colorBackText"
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_description"
+            app:layout_constraintVertical_weight="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

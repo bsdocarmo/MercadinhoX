@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MercadinhoX</string>
+    <string name="bt_back">Voltar</string>
+    <string name="iv_product">Product image</string>
+    <string name="bt_add_cart">Adicionar ao Carrinho</string>
+    <string name="menu_cart">Cart</string>
+    <string name="user_name">Olá Bruno</string>
+    <string name="offers">Confira nossas ofertas!</string>
+    <string name="products">Produtos</string>
+</resources>
